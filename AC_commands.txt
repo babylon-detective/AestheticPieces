@@ -1,0 +1,18 @@
+'alphapoet', 'bgm', 'bits', 'blank', 'bleep', 'bubble', 'camera', 
+  'code-channel', 'decode', 'baktok', 'painting'
+  'download', 'encode', 'ff', 'freaky-flowers', 'gargoyle', 'handle',
+  'happy-hands-assembler', 'hha', 'liar', 'line', 'login', 
+  'logout', 'm2w2', 'melody', 'metronome', 'microphone',
+  'no!', 'no', 'oval', 'done', 'paint', 'paste', 'handprint', 
+  'plot', 'profile', 'prompt', 'pull', 'rect', 'resize x(num)',
+  'girlfriend', 'boyfriend', 'mom', 'dad', 'scawy-snake', 'scream', 'sfx', 'shape', 'sign', 'sing', 'smear', 
+  'song', 'sparkle', 
+  'staka', 'starfield', 'tone', 'tracker', 'valbear', 'vary', 'video', 'wand', 'wg', 
+  'wgr', 'whistle', 'whistlegraph', 'wipe', 'word', 'zoom', 'nopan'
+
+
+
+
+games:
+@bash/fire!
+scawy-snake
