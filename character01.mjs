@@ -6,9 +6,6 @@
   - You can `console.log(api);` to explore,
     and then destructure additional api commands
     to try them out!
-
-
-    
   - Top-level commands make up each piece's application flow.
     Uncomment and export them to invoke their behavior and use their apis.
   - Enter `help` for the AC #help and ping @helper for additional explanation.
