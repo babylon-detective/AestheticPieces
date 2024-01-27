@@ -76,32 +76,30 @@ console.log("After laugh:", head, body, limbs);
   //character
   pan(screen.width / 2, screen.height / 2);
 
-  //shadow
-  // oval
-  ink("gray").oval(0, 33, 14, 6, 255)
-  ink(50).oval(0, 33, 12, 5, 255)
   // circle is, x, y, radius
   // ink("lime").oval(0, 0, 32, 12)
   
   //head = "smile"
-
   if (head === "smile") {
-  //hair
-  ink("red").box(0,-25, 20,19, "center")
-  ink("black").line(1,-17, 1,-35)
-  ink("black").line(6,-17, 6,-35)
-  ink("black").line(-7,-17, -7,-35)
-  ink("black").line(-2, -17, -2, -35)  
+  //horns
+  ink("black").line(-7,-30, -12,-35)
+  ink("black").line(-8,-32, -8,-35)
+  ink("black").line(-12,-30, -8,-30)
+  ink("black").line(6,-30, 11,-35)
+  ink("black").line(7,-32, 7,-35)
+  ink("black").line(11,-30, 7,-30)
   // head
-  ink("orange",).circle(0, -22, 9.5, 5*3, "center");
+  ink("green",).circle(0, -22, 9.5, 5*3, "center");
   //mouth
-    ink("black").circle(0, -19, 4, -23)
-    ink("orange").box(-4, -19, 8, -4)
+
   //eyes
-    ink("black").point(3, -24)
-    ink("black").point(-4, -24)
+    ink("red").circle(4, -24, 3, 1)
+    ink("red").circle(-4, -24, 3, 1)
+  //nose
+  ink("black").point(1, -16)
+    ink("black").point(-2, -16)
   //brow
-    ink("black").poly([[-3, -30], [-0, -27], [3, -30]]);
+    ink("green").shape([-5,-30+3, 0,-25+3, 5,-30+3]);
     } else if (head === "none") {
     // do nothing
     } else if (head === "eyes-only") {
@@ -131,11 +129,11 @@ console.log("After laugh:", head, body, limbs);
 
   if (body === "smile") {
     //body
-    ink("orange",).circle(0, -3, 9.5, 5*3, "center");
+    ink("green",).circle(0, -3, 9.5, 5*3, "center");
   // center
   ink("red").point(-1, 5);
     //root
-    ink("red").circle(0, 10, 9.5, 1, "center");
+    ink("green").circle(0, 10, 9.5, 1, "center");
   } else if (body === "none") {
     // do nothing 
   } else if (body === "laugh") {
@@ -145,9 +143,11 @@ console.log("After laugh:", head, body, limbs);
   }
     
   if (tail === "smile") {
-    ink("black").circle(0, 16, 6.5, 1, "center");
-    ink("red").circle(0, 25, 4, 1, "center");
-    ink("black").circle(0, 30, 4, 1, "center");
+    ink("green").circle(0, 16, 6.5, 1, "center");
+    ink("green").circle(0, 25, 4, 1, "center");
+    ink("green").circle(0, 30, 4, 1, "center");
+    ink("green").circle(0, 35, 2, 1, "center");
+    ink("green").circle(0, 38, 1, 1, "center");
   } else if (tail === "none") {
 
   } else if (tail === "laugh") {
@@ -157,21 +157,18 @@ console.log("After laugh:", head, body, limbs);
   // limbs = "smile"
 
   if (limbs === "smile") {
-     // neck
-  ink("orange").box(-1*2.5,-5 *2.5, 1.5 * 3,1.5 * 2.5)
+  // neck
+  ink("green").box(-2.5,-13, 6,3)
   // left arm
-  ink("black").poly([[8,-10], [16,-8], [20,-15]]);
-  // ink("orange").shape([15,8, 11,10, 11,16]);
+  ink("black").poly([[7,-10], [15,-8], [19,-15]]);
+  
   // right arm
   ink("black").poly([[-8,-10], [-16,-8], [-20,-15]]);
-  // ink("orange").shape([-16,8, -12,10, -12,16]);
+  
   
   // left leg
-  // x, y, x, y, x, y
-  // ink("orange").shape([-8,9, -2,17, -7,18]);
   ink("black").poly([[8,15], [12,18], [10,25]]);
   // right leg
-  // ink("orange").shape([6.5,10, 6,18, 1,18]);
   ink("black").poly([[-8,15], [-12,18], [-10,25]]);
   
   } else if (limbs === "none") {
@@ -199,7 +196,10 @@ console.log("After laugh:", head, body, limbs);
 
   ink("yellow").write("DRAGON!", { x: -40, y: -40 });
 
+
   
+  // ink("black").line(1,-17, 1,-35)
+  // ink("black").line(-2, -17, -2, -35) 
   
   unpan();
   // I guess i'm just thinking that when the user types text or has a command
