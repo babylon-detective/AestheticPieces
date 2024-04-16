@@ -1,5 +1,5 @@
 // Character01, 2024.1.23.22.10.04.270
-// A piece called `character01
+// A piece called `DRAGON'
 
 /* #region 📚 README 
   - Welcome to your first aesthetic.computer piece.
@@ -26,7 +26,7 @@ let limbs = "smile";
 // will copy the values.
 // const laugh = [head, body, limbs];
 
-// List of Functions for coordinated animations
+// List of Fuctions for coordinated animations
 function laugh() {
   head = "laugh";
   body = "laugh";
@@ -63,14 +63,14 @@ function boot({ api, wipe, resolution }) {
 
 // 🎨 Paint
 function paint({ api, help, num, screen, wipe, ink, line, pen, pan, unpan, box }) {
-  wipe("blue")
+  //wipe("blue")
 
   let wig = help.choose(-1, 0, 1);
 
   //Character actions
   smile(); // Will update head, body and limbs with your custom setting.
 
-console.log("After laugh:", head, body, limbs);
+// console.log("After laugh:", head, body, limbs);
 //console.log(laugh);
 
   //character
@@ -194,9 +194,7 @@ console.log("After laugh:", head, body, limbs);
   ink("orange").shape([-8,17, -2,17, -4,36]);
   }
 
-  ink("yellow").write("DRAGON!", { x: -40, y: -40 });
-
-
+  // ink("yellow").write("DRAGON", { x: -10, y: -9 });
   
   // ink("black").line(1,-17, 1,-35)
   // ink("black").line(-2, -17, -2, -35) 

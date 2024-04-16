@@ -70,7 +70,13 @@ function paint({ api, help, num, screen, wipe, ink, line, pen, pan, unpan, box }
   let wig = help.choose(-1, 0, 1);
 
   //Character actions
-  smile(); // Will update head, body and limbs with your custom setting.
+  // smile(); // Will update head, body and limbs with your custom setting.
+
+  if (pen?.drawing) {
+    laugh();
+  } else {
+    smile();
+  }
 
 console.log("After laugh:", head, body, limbs);
 //console.log(laugh);
@@ -144,6 +150,9 @@ console.log("After laugh:", head, body, limbs);
     // do nothing 
   } else if (body === "laugh") {
     ink("orange").box(0, -2 + wig, 5 * 3, 7 * 3, "center");
+    ink("red").point(-4,-3+wig)
+    ink("red").point(2, -3 + wig)
+    ink("red").point(-1, 5+wig);
      //root
      ink("red").box(-8,9+wig, 15,6)
   }
